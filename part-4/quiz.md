@@ -1,4 +1,6 @@
 - When you run a command in the terminal, where does BASH look for that command?
+When you run a command in the terminal, BASH looks for that command in the folders listed in your $PATH global environment variable,
+your current aliases, and commands built in to the shell (BUILTIN). 
 - On a UNIX computer, how do you stop a running process?
 - What packages do you have installed via homebrew?
 - On a UNIX computer, how do you find the process id of a running process?
