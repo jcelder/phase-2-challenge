@@ -178,5 +178,10 @@ node_modules
 ```
 - What is the main difference between `==` and `===` in JavaScript?
 ```
-The main difference between `==`(equality operator) and the `===`(identity operator) is that the identity operator doesn't perform type conversion on the two values being compared.
+The main difference between `==`(equality operator) and the `===`(identity operator) is that the identity operator doesn't perform type conversion on the two values being compared. What this means is that if you run the following comparisons and compare their results, they are not the same.
+
+  1 == '1' returns true
+  1 === '1' returns false
+
+This is important to note when comparing values, particular when we want to ensure that we are using the right type of equality (strict vs non-strict) in our comparisons.
 ```
