@@ -12,6 +12,7 @@ const weekday = (date) => {
 // snippet(string, length)
 //returns a string shortened to length plus ... for a given string and length
 const snippet = (string, length) => {
+  if (!string || !length || typeof string !== 'string' || typeof length !== 'number') return 'Invalid string or length'
   if (string.length <= length) return string;
   return `${string.slice(0, length)}...`
 }
