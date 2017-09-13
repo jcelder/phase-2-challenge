@@ -16,4 +16,10 @@ const snippet = (string, length) => {
   if (string.length <= length) return string;
   return `${string.slice(0, length)}...`
 }
-module.exports = { weekday, snippet }
+
+//numProps(object)
+//returns the number of enumerable properties on an object
+const numProps = (input) => {
+  return Object.keys(input).length
+}
+module.exports = { weekday, snippet, numProps }

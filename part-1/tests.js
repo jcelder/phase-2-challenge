@@ -28,3 +28,11 @@ describe('snippet', function () {
     expect(snippet(1,20)).to.equal('Invalid string or length')
   })
 })
+
+describe('numProps', function () {
+  const numProps = require('./functions.js').numProps
+  it('should return 3 when passed the test object', () => {
+    const test = { a: 1, b: 2, c: 3 }
+    expect (numProps(test)).to.equal(3)
+  })
+})
