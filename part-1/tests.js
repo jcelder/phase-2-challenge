@@ -35,4 +35,7 @@ describe('numProps', function () {
     const test = { a: 1, b: 2, c: 3 }
     expect (numProps(test)).to.equal(3)
   })
+  it('should return "Invalid Argument" when no argument is passed', () => {
+    expect(numProps()).to.equal('Invalid Argument')
+  })
 })
