@@ -39,3 +39,18 @@ describe('numProps', function () {
     expect(numProps()).to.equal('Invalid Argument')
   })
 })
+
+describe('filterBetween', () => {
+  const filterBetween = require('./functions.js').filterBetween
+  it('should return [2, 3] when passed the test array', () => {
+    const testArray = [1, 2, 3, 4, 5, 6, 7, 8]
+    expect(filterBetween(testArray, 2, 7)).to.deep.equal([2, 3, 4, 5, 6, 7])
+  })
+  it('should return "Invalid Argument: Not an array" when passed an argument that isnt an array', () => {
+    const test = 2;
+    expect(filterBetween(test, 1, 2)).to.equal('Invalid Argument: Not an array')
+  })
+  it('should return "Invalid Argument: One or more arguments not passed" when one or more arguments are not passed', () => {
+    expect(filterBetween()).to.equal('Invalid Argument: One or more arguments not passed')
+  })
+})
