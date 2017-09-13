@@ -21,4 +21,7 @@ describe('snippet', function () {
   it('should return "This is a..." when passed "This is a test" and 9 as arguments', () => {
     expect(snippet('This is a test', 9)).to.equal('This is a...')
   })
+  it('should return "This is a test" when passed "This is a test" and 20 as arguments', () => {
+    expect(snippet("This is a test", 20)).to.equal('This is a test')
+  })
 })
