@@ -18,7 +18,7 @@ const snippet = (string, length) => {
 }
 
 //numProps(object)
-//returns the number of enumerable properties on an object
+//returns the number of enumerable and non-inherited properties on an object
 const numProps = (input) => {
   if (!input) return 'Invalid Argument'
   return Object.keys(input).length
