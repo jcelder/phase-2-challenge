@@ -94,8 +94,11 @@ You can tell if a terminal command completed successfully by checking the exit s
 
 - What is the difference between a relative and absolute path?
 ```
-An absolute path always points to the same directory regardless of the working directory and therefore the path must start from the root directory. A relative path is relative to the working directory and doesn't require starting the path from the root directory.
-```
+An absolute path always points to the same directory regardless of the working directory and therefore the path must start from the root directory. A relative path is relative to the working directory and doesn't require starting the path from the root directory. The paths to my phase 1 directory inside my dev directory.
+
+Absolute: /Users/josh/dev/phase-1
+Relative(assuming home directory is my working directory): dev/phase-1
+
 - Lets say you have the following file structure
 
   ```
@@ -115,7 +118,7 @@ An absolute path always points to the same directory regardless of the working d
 ```
 - What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
 ```
-In Atom I would use Command + B
+In Atom I would use Command + P
 ```
 - What files or folders do you want all git repositories to ignore?
 ```
