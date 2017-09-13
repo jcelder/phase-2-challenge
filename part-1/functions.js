@@ -9,4 +9,10 @@ const weekday = (date) => {
   return dayArray[date.getDay()]
 }
 
-module.exports = { weekday }
+// snippet(string, length)
+//returns a string shortened to length plus ... for a given string and length
+const snippet = (string, length) => {
+  // return string.slice(0, length) + '...'
+  return `${string.slice(0, length)}...`
+}
+module.exports = { weekday, snippet }

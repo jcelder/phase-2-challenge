@@ -15,3 +15,10 @@ describe('weekday', function () {
     expect(weekday()).to.equal('Invalid Date or No Date Object Passed')
   })
 })
+
+describe('snippet', function () {
+  const snippet = require('./functions.js').snippet
+  it('should return "This is a..." when passed "This is a test" and 9 as arguments', () => {
+    expect(snippet('This is a test', 9)).to.equal('This is a...')
+  })
+})
